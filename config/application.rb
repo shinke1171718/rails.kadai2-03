@@ -20,3 +20,10 @@ module Myapp203
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+module RailsDevise
+  class Application < Rails::Application
+    # 以下を追記
+    config.i18n.default_locale = :ja
+  end
+end
