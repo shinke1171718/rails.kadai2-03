@@ -3,29 +3,27 @@
 
 <div class="device_frame">
   <div class="container device">
-    <h2>新しいアカウントを作成</h2>
+    <p class="my-4 text-center">新しいアカウントを作成</h2>
 
     <div class="field form-row">
-      <div class="col-2 required-b pt-2"></div>
-      <%= f.label :name ,"ユーザー名"%><br />
-      <%= f.text_field :name, autofocus: true %>
+      <span class="badge text-bg-danger">必須</span>
+      <%= f.text_field :name, autofocus: true ,placeholder: "ユーザー名"%>
     </div>
 
 
     <div class="field form-row">
-      <%= f.label :email ,"メールアドレス"%><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <span class="badge text-bg-danger">必須</span>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" ,placeholder: "メールアドレス" %>
     </div>
 
     <div class="field form-row">
-      <%= f.label :password ,"パスワード"%>
-      <br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <span class="badge text-bg-danger">必須</span>
+      <%= f.password_field :password, autocomplete: "new-password" ,placeholder: "パスワード"%>
     </div>
 
     <div class="field form-row">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <span class="badge text-bg-danger">必須</span>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" ,placeholder: "パスワード確認"%>
     </div>
 
     <div class="actions">
