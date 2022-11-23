@@ -27,10 +27,10 @@
       <%= f.password_field :password_confirmation, autocomplete: "new-password" ,placeholder: "パスワード確認"%>
     </div>
 
-    <div class="actions form-control btn btn-primary my-4 ">
+    <div class="actions form-control btn-primary my-4  ">
       <%= f.submit "新しいアカウントを作成"%>
     </div>
-    <p class="sign_up_link"><%= render "devise/shared/links"%></p>
+    <p class="sign_up_link text-decoration-none"><%= render "devise/shared/links"%></p>
   </div>
 </div>
 <% end %>
