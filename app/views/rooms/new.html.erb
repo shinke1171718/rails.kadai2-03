@@ -1,0 +1,27 @@
+<%= form_with model:@room do |f| %>
+
+<h1>ルーム情報登録</h1>
+
+<p>Find me in app/views/rooms/new.html.erb</p>
+
+<div class = "room_view">
+  <div calss ="room-view-box">
+    <%= f.text_field :room_name autofocus: true ,placeholder: "ルーム名を入力" %>
+  </div>
+
+  <div calss ="room-view-box">
+    <%= f.text_field :room_Introduction autofocus: true ,placeholder: "ルーム説明を入力" %>
+  </div>
+
+  <div calss ="room-view-box">
+    <%= f.text_field :price autofocus: true ,placeholder: "1日あたりの料金を入力" %>
+  </div>
+
+  <div calss ="room-view-box">
+    <%= f.text_field :address autofocus: true ,placeholder: "住所を入力" %>
+  </div>
+
+  <div calss ="room-view-box">
+    <%= f.text_field :address autofocus: true ,placeholder: "住" %>
+  </div>
+</div>
