@@ -14,5 +14,9 @@ Rails.application.routes.draw do
       get 'amenities'
       get 'location'
     end
+
+  delete :delete_photo
+  post :upload_photo
+
   end
 end

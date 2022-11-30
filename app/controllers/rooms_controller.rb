@@ -15,5 +15,16 @@ class RoomsController < ApplicationController
       flash[:alert] = "問題が発生しました。"
       render "new"
     end
+
+    def upload_photo
+      @room.photos.attach(params[:file])
+      render json: { success: true }
+    end
+
+    def delete_photo
+      @image = ActiveStorage::Attachment.find(params[:photo_id])
+      @image.purge
+      redirect_to photo_upload_room_path(@room)
+    end
   end
 end
